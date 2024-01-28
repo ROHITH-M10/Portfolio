@@ -34,10 +34,12 @@ ul a{
     color: white;
 }
 
-.active{
-    color:aqua;
-    text-decoration: underline;
-    text-underline-offset: 1vh;
+
+.active img{
+    border-radius: 50%;
+    border: solid 2px aqua;
+    width: 6vh;
+    height: 6vh;
 }
 .not-active:hover{
     color: aqua;
