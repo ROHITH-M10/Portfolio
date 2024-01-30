@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    background-color:black;
+    color: white;
+    font-family: sans-serif;
+    user-select: none;
+    min-height: 100vh;
+}
+
+.nav-links{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4vw;
+    padding-top: 2vh;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transition: 0.5s ease-in-out;
+
+}
+
+.not-active img{
+    border-radius: 50%;
+    border: solid 2px rgb(0, 0, 0);
+    width: 6vh;
+    height: 6vh;
+}
+
+.nav-links{
+    list-style: none;
+    font-size: 4vh;
+}
+
+.nav-links a{
+    color: white;
+}
+
+.nav-links .not-active:hover{
+    color: aqua;
+    text-decoration: underline;
+    text-underline-offset: 1vh;
+    transition: 1s ease-in-out;
+}
+
+
+.not-active img:hover{
+    border-radius: 50%;
+    border: solid 2px aqua;
+    width: 6vh;
+    height: 6vh;
+    transition: 1s ease-in-out;
+}
+
+.nav-links .active{
+    color: aqua;
+    text-decoration: underline;
+    text-underline-offset: 1vh;
+    transition: 1s ease-in-out;
+}
+
+
+
+
+
+/*footer*/
+
+
+.site-footer{
+    position: sticky;
+    top: 100%;
+    width: 100%;
+    background-color: rgb(18, 18, 18);
+    text-align: center;
+    transition: 0.5s ease-in-out;
+}
+
+.site-footer, .footer-rights, .fa{
+    color: white;
+
+
+}
+
+.footer-rights{
+    padding: 2vh 0vh 0vh 0vh;
+    font-size: 3vh;
+}
+
+.footer-rights a{
+    text-decoration: none;
+    color: white;
+}
+
+.fa{
+    margin: 2vh;
+    font-size: 3vh;
+
+}
+
+.footer-icon:hover{
+    color: aqua;
+    transition: 0.5s ease-in-out;
+    
+
+}
