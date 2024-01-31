@@ -24,7 +24,8 @@ body{
     background-color: rgb(0, 0, 0);
     color: white;
     transition: 0.5s ease-in-out;
-
+    position: fixed;
+    width: 100%;
 }
 
 .not-active img{
@@ -68,7 +69,6 @@ body{
 
 
 /* small screen nav bar */
-
 .hidden {
     display: none;
 }
@@ -77,8 +77,10 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1vh 0vh 1vh 1vh;
     background-color: rgb(18, 18, 18);
+    
+    position: fixed;
+    width: 100%;
 }
 
 .main-nav-small-inside{
@@ -88,9 +90,10 @@ body{
 .main-nav-small-inside-all{
     display: flex;
     flex-direction: column;
-    padding: 1vh 1vh;
+    
+    padding-top: 10vh;
+    padding-left: 1vh;
     background-color: rgb(18, 18, 18);
-    ;
 
 }
 

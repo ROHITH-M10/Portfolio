@@ -68,6 +68,7 @@ body{
     justify-content: space-between;
     padding: 1vh 0vh 1vh 1vh;
     background-color: rgb(18, 18, 18);
+
 }
 
 .main-nav-small-inside{
@@ -77,9 +78,9 @@ body{
 .main-nav-small-inside-all{
     display: flex;
     flex-direction: column;
-    padding: 1vh 1vh;
+    
+    padding: 3vh 2vh;
     background-color: rgb(18, 18, 18);
-    ;
 
 }
 

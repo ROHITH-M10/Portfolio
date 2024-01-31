@@ -1,5 +1,5 @@
 function windowSizeFn() {
-    if (window.innerWidth < 750 ) {
+    if (window.innerWidth < 780 ) {
         console.log("HERE1");
         document.querySelector(".main-nav-small").classList.remove("hidden");
         document.querySelector(".main-nav").classList.add("hidden");

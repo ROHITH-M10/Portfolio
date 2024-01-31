@@ -1,5 +1,5 @@
 function windowSizeFn() {
-    if (window.innerWidth < 750 ) {
+    if (window.innerWidth < 780 ) {
         console.log("HERE1");
         document.querySelector(".main-nav-small").classList.remove("hidden");
         document.querySelector(".main-nav").classList.add("hidden");
@@ -16,7 +16,15 @@ function dropDownMenu() {
     document.querySelector(".main-nav-small-inside").classList.toggle("hidden");
 }
 
+
+window.addEventListener("ommouseover",function(){
+    doccument.get
+});
+
 window.onload = windowSizeFn;
 window.addEventListener("resize", windowSizeFn);
+
+
+
 
 
