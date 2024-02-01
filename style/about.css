@@ -8,27 +8,30 @@ body{
     background-color:black;
     color: white;
     font-family: sans-serif;
-    user-select: none;
     min-height: 100vh;
+    scrollbar-width: none;
 }
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+
 
 .nav-links{
     flex-wrap: wrap;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     gap: 4vw;
     padding-top: 2vh;
     background-color: rgb(0, 0, 0);
     color: white;
     transition: 0.5s ease-in-out;
-    
-    position:fixed;
+    position: fixed;
     width: 100%;
-    
 }
-
-
 
 .not-active img{
     border-radius: 50%;
@@ -71,7 +74,6 @@ body{
 
 
 /* small screen nav bar */
-
 .hidden {
     display: none;
 }
@@ -81,8 +83,10 @@ body{
     flex-direction: row;
     justify-content: space-between;
     background-color: rgb(18, 18, 18);
-    position: fixed;
+    
+    position: sticky;
     width: 100%;
+
 }
 
 .main-nav-small-inside{
@@ -110,147 +114,63 @@ body{
 
 
 
-/* container one */
-.main-container-one{
-    border: solid 5px white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 20vh;
-    
-}
-
-/* container one scroll */
-
-.container-about{
-    display: flex;
-    flex-wrap: wrap;
-    color: white;
-    padding: 10% 25%;
-}
-
-.container-one{
-            height: 100vh;
-            width:100%;
-            background-image: url("../images/page1.png");
-            background-size:cover; 
-            background-position:center;
-            display: flex;
-            align-items: top;
-            justify-content: center;
-            background-attachment: fixed; 
-}
-
-.container-two{
-    height: 100vh;
-    width:100%;
-    background-image: url("../images/page2.png");
-    background-size:cover; 
-    background-position:center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-attachment: fixed; 
-}
-
-.container-three{
-    height: 100vh;
-    width:100%;
-    background-image: url("../images/page3.png");
-    background-size:cover; 
-    background-position:center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-attachment: fixed; 
-}
-
-.container-four{
-    height: 100vh;
-    width:100%;
-    background-image: url("../images/page4.png");
-    background-size:cover; 
-    background-position:center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-attachment: fixed; 
-}
-
-.container-four{
-    height: 100vh;
-    width:100%;
-    background-image: url("../images/page1.png");
-    background-size:cover; 
-    background-position:center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-attachment: fixed; 
-}
-
 
 /* content */
-
-li{
-    text-decoration:none;
+.about-outside-container{
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    
 }
-
+.about-container{
+    width: 75%;
+    text-align: center;
+}
 h1{
-    padding:5% 0%;
-    font-size: 10vh;
+    font-size: 5rem;
+    font-weight: 400;
+    margin-bottom: 5rem;
+    color: white;
 }
 
 h2{
-    padding:2% 0%;
-    text-decoration: underline;
-    text-underline-offset: 2vh;
-    font-size: 8vh;
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    color: white;
 }
 
-h3{
-    padding:2% 0%;
-    text-decoration: underline;
-    text-underline-offset: 2vh;
-    font-size: 6vh;
-
+p{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: white;
 }
 
-h5{
-    padding:2% 0%;
-    font-size: 4vh;
-    letter-spacing: 1.5px;
-    word-spacing: 2.5px;
-    line-height: 30px;
-    text-align: justify;
+.areas-of-interest,.what-i-enjoy{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2vw;
 }
 
-.detail ul li{
-    text-decoration:none;
+.hello,.journey,.skills,.interest,.enjoy{
+    margin-bottom: 10rem;
 }
 
-@media screen and (max-width: 768px) {
-    .container-about{
-        display: flex;
-        flex-wrap: wrap;
-        color: white;
-        padding: 10% 10%;
-    }
 
-    h5{
-        padding:2% 0%;
-        font-size: 25px;
-    }
 
-    h3{
-        padding:2% 0%;
-        text-decoration: underline;
-        text-underline-offset: 2vh;
-        font-size: 35px;
-    
-    }
-}
+
+
 
 
 
