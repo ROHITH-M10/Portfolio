@@ -8,8 +8,8 @@ body{
     background-color:black;
     color: white;
     font-family: sans-serif;
-    min-height: 100vh;
-    scrollbar-width: none;
+    min-height: 100vh;   
+  
 }
 
 ::-webkit-scrollbar{
@@ -31,6 +31,7 @@ body{
     transition: 0.5s ease-in-out;
     position: fixed;
     width: 100%;
+    
 }
 
 .not-active img{
@@ -119,21 +120,21 @@ body{
 .about-outside-container{
     padding-top: 10rem;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    flex-wrap: wrap;
+    background-color: rgb(0, 0, 0);
     
 }
 .about-container{
-    width: 75%;
+    width: 80%;
     text-align: center;
 }
 h1{
     font-size: 5rem;
     font-weight: 400;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
     color: white;
 }
 
@@ -141,31 +142,34 @@ h2{
     font-size: 3rem;
     font-weight: 300;
     margin-bottom: 2rem;
-    color: white;
+
+
 }
 
 p{
     font-size: 1.5rem;
     font-weight: 300;
-    color: white;
-}
+    
 
-.areas-of-interest,.what-i-enjoy{
-    font-size: 1.5rem;
-    font-weight: 300;
-    color: white;
-    margin-bottom: 2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2vw;
 }
 
 .hello,.journey,.skills,.interest,.enjoy{
     margin-bottom: 10rem;
 }
+
+.journey,.interest{
+    border-left:solid 5px white;
+}
+
+.skills,.enjoy{
+    border-right:solid 5px white;
+}
+
+.about-text-color{
+    color: rgb(19, 19, 19);
+}
+
+
 
 
 
