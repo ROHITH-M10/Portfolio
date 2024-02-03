@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../style/contact.css">
+    <link rel="stylesheet" href="../style/playground.css">
 </head>
 <body>
 
@@ -22,7 +22,7 @@
         </ul>
     </div>
 
-      <div class="main-nav-small">
+    <div class="main-nav-small">
         <div class="main-nav-small-visible">
             <a href="../index.html" class="not-active"><img src="../images/logo.png" alt="logo"></a>
             <a href="#" class="icon-dropdown" onclick="dropDownMenu()">
@@ -38,7 +38,74 @@
                 <a href="contact.html">Contact</a>
             </div>
         </div>
-      </div>
+    </div>
+
+
+    <!--Content-->
+    <div class="container">
+        <div class="playground-container">
+            
+            <div class="box traffic">
+                <div class="traffic-signal">
+                    <div class="red-signal"></div>
+                    <div class="orange-signal"></div>
+                    <div class="green-signal"></div>
+                    <div class="traffic-msg"></div>
+                </div>
+            </div>
+
+            <div class="box smiley">
+                <svg viewBox="0 0 500 500" class="svg-container">
+                    <circle cx="240" cy="240" r="160" fill="black" stroke="white" stroke-width="5px"></circle>
+                    <ellipse cx="175" cy="190" rx="40" ry="50" fill="aqua"></ellipse>
+                    <ellipse cx="300" cy="190" rx="40" ry="50" fill="aqua"></ellipse>
+                    <ellipse cx="240" cy="300" rx="75" ry="40" fill="aqua"></ellipse>
+                    <ellipse cx="240" cy="280" rx="90" ry="45" fill="black"></ellipse>
+                </svg>
+                </div>
+            </div>
+
+            <div class="calculator box">
+                <div class= "formstyle">
+                    <form name = "form1">
+                        
+                      <input id = "calc" type ="text" name = "answer"> <br> <br>
+                      <input type = "button" value = "1" onclick = "form1.answer.value += '1' ">
+                      <input type = "button" value = "2" onclick = "form1.answer.value += '2' ">
+                      <input type = "button" value = "3" onclick = "form1.answer.value += '3' ">
+                       <input type = "button" value = "+" onclick = "form1.answer.value += '+' ">
+                      <br> <br>
+                      
+                      <input type = "button" value = "4" onclick = "form1.answer.value += '4' ">
+                      <input type = "button" value = "5" onclick = "form1.answer.value += '5' ">
+                      <input type = "button" value = "6" onclick = "form1.answer.value += '6' ">
+                      <input type = "button" value = "-" onclick = "form1.answer.value += '-' ">
+                      <br> <br>
+                      
+                      <input type = "button" value = "7" onclick = "form1.answer.value += '7' ">
+                      <input type = "button" value = "8" onclick = "form1.answer.value += '8' ">
+                      <input type = "button" value = "9" onclick = "form1.answer.value += '9' ">
+                      <input type = "button" value = "*" onclick = "form1.answer.value += '*' ">
+                      <br> <br>
+                      
+                      
+                      <input type = "button" value = "/" onclick = "form1.answer.value += '/' ">
+                      <input type = "button" value = "0" onclick = "form1.answer.value += '0' ">
+                        <input type = "button" value = "." onclick = "form1.answer.value += '.' ">
+                      <input type = "button" value = "=" onclick = "form1.answer.value = eval(form1.answer.value) ">
+                        <br>
+                      <input type = "button" value = "Clear " onclick = "form1.answer.value = ' ' " id= "clear" >
+                      <br> 
+                      
+                    </form>
+                    </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
     
 
 
