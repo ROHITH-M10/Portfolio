@@ -17,9 +17,6 @@ function dropDownMenu() {
 }
 
 
-window.addEventListener("ommouseover",function(){
-    doccument.get
-});
 
 window.onload = windowSizeFn;
 window.addEventListener("resize", windowSizeFn);
@@ -27,79 +24,80 @@ window.addEventListener("resize", windowSizeFn);
 
 // journey
 document.querySelector(".journey").onmouseover = function() {
-    document.querySelector(".journey h2").style.color = "white";
-    document.querySelector(".journey p").style.color = "white";
+    document.querySelector(".journey .x-h2").style.color = "white";
+    document.querySelector(".journey .x-p p").style.color = "white";
 
-    document.querySelector(".journey h2").style.transition = "ease-in-out 1s";
-    document.querySelector(".journey p").style.transition = "ease-in-out 1s";
+    document.querySelector(".journey .x-h2").style.transition = "ease-in-out 1s";
+    document.querySelector(".journey .x-p p").style.transition = "ease-in-out 1s";
+
 
 }
 
 document.querySelector(".journey").onmouseout = function() {
-    document.querySelector(".journey h2").style.color = "";
-    document.querySelector(".journey p").style.color = "";
+    document.querySelector(".journey .x-h2").style.color = "";
+    document.querySelector(".journey .x-p p").style.color = "";
 
-    document.querySelector(".journey h2").style.transition = "ease-in-out 1s";
-    document.querySelector(".journey p").style.transition = "ease-in-out 1s";
-
+    document.querySelector(".journey .x-h2").style.transition = "ease-in-out 1s";
+    document.querySelector(".journey .x-p p").style.transition = "ease-in-out 1s";
 }
 
 // skills
 document.querySelector(".skills").onmouseover = function() {
-    document.querySelector(".skills h2").style.color = "white";
-    document.querySelector(".skills p").style.color = "white";
+    document.querySelector(".skills .x-h2").style.color = "white";
+    document.querySelector(".skills .x-p p").style.color = "white";
 
-    document.querySelector(".skills h2").style.transition = "ease-in-out 1s";
-    document.querySelector(".skills p").style.transition = "ease-in-out 1s";
+    document.querySelector(".skills .x-h2").style.transition = "ease-in-out 1s";
+    document.querySelector(".skills .x-p p").style.transition = "ease-in-out 1s";
+
 
 }
 
 document.querySelector(".skills").onmouseout = function() {
-    document.querySelector(".skills h2").style.color = "";
-    document.querySelector(".skills p").style.color = "";
+    document.querySelector(".skills .x-h2").style.color = "";
+    document.querySelector(".skills .x-p p").style.color = "";
 
-    document.querySelector(".skills h2").style.transition = "ease-in-out 1s";
-    document.querySelector(".skills p").style.transition = "ease-in-out 1s";
+    document.querySelector(".skills .x-h2").style.transition = "ease-in-out 1s";
+    document.querySelector(".skills .x-p p").style.transition = "ease-in-out 1s";
 }
 
 
 // interest
 document.querySelector(".interest").onmouseover = function() {
-    document.querySelector(".interest h2").style.color = "white";
-    document.querySelector(".interest p").style.color = "white";
+    document.querySelector(".interest .x-h2").style.color = "white";
+    document.querySelector(".interest .x-p p").style.color = "white";
 
-    document.querySelector(".interest h2").style.transition = "ease-in-out 1s";
-    document.querySelector(".interest p").style.transition = "ease-in-out 1s";
+    document.querySelector(".interest .x-h2").style.transition = "ease-in-out 1s";
+    document.querySelector(".interest .x-p p").style.transition = "ease-in-out 1s";
+
 
 }
 
 document.querySelector(".interest").onmouseout = function() {
-    document.querySelector(".interest h2").style.color = "";
-    document.querySelector(".interest p").style.color = "";
+    document.querySelector(".interest .x-h2").style.color = "";
+    document.querySelector(".interest .x-p p").style.color = "";
 
-    document.querySelector(".interest h2").style.transition = "ease-in-out 1s";
-    document.querySelector(".interest p").style.transition = "ease-in-out 1s";
-
+    document.querySelector(".interest .x-h2").style.transition = "ease-in-out 1s";
+    document.querySelector(".interest .x-p p").style.transition = "ease-in-out 1s";
 }
 
 
 // enjoy
 document.querySelector(".enjoy").onmouseover = function() {
-    document.querySelector(".enjoy h2").style.color = "white";
-    document.querySelector(".enjoy p").style.color = "white";
+    document.querySelector(".enjoy .x-h2").style.color = "white";
+    document.querySelector(".enjoy .x-p p").style.color = "white";
 
-    document.querySelector(".enjoy h2").style.transition = "ease-in-out 1s";
-    document.querySelector(".enjoy p").style.transition = "ease-in-out 1s";
+    document.querySelector(".enjoy .x-h2").style.transition = "ease-in-out 1s";
+    document.querySelector(".enjoy .x-p p").style.transition = "ease-in-out 1s";
+
 
 }
 
 document.querySelector(".enjoy").onmouseout = function() {
-    document.querySelector(".enjoy h2").style.color = "";
-    document.querySelector(".enjoy p").style.color = "";
+    document.querySelector(".enjoy .x-h2").style.color = "";
+    document.querySelector(".enjoy .x-p p").style.color = "";
 
-    document.querySelector(".enjoy h2").style.transition = "ease-in-out 1s";
-    document.querySelector(".enjoy p").style.transition = "ease-in-out 1s";
-
+    document.querySelector(".enjoy .x-h2").style.transition = "ease-in-out 1s";
+    document.querySelector(".enjoy .x-p p").style.transition = "ease-in-out 1s";
 }
 
 

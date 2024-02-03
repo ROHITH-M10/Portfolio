@@ -131,53 +131,70 @@ body{
     width: 80%;
     text-align: center;
 }
+
+.hello{
+
+    font-weight: 400;
+    margin-bottom: 20rem;
+    margin-top: 10rem;
+    color: white;
+}
+
+.hello p{
+    font-size: 1.5rem;
+
+}
+
 h1{
     font-size: 5rem;
     font-weight: 400;
     margin-bottom: 4rem;
     color: white;
 }
-
-h2{
-    font-size: 3rem;
-    font-weight: 300;
-    margin-bottom: 2rem;
-
-
-}
-
 p{
-    font-size: 1.5rem;
-    font-weight: 300;
-    
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    margin-top: 1.5rem;
+    color: white;
+}
+
+.x-box{
+    display: flex;
+    width: 100%;
+    margin-top: 5rem;
+}
+
+.x-vertical{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    display:block;
+    color: white;
+    font-size: 1rem;
+    padding: 1rem;
+    border-right: solid 3px white;
+    margin: 1rem;
 
 }
 
-.hello,.journey,.skills,.interest,.enjoy{
-    margin-bottom: 10rem;
+.x-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin: 1rem;
 }
 
-.journey,.interest{
-    border-left:solid 5px white;
+.x-h2,.x-p p{
+    color: rgb(21, 21, 21);
 }
 
-.skills,.enjoy{
-    border-right:solid 5px white;
+.x-h2{
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
 }
-
-.about-text-color{
-    color: rgb(19, 19, 19);
-}
-
-
-
-
-
-
-
-
-
-
 
 
 
