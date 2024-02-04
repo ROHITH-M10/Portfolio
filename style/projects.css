@@ -12,6 +12,10 @@ body{
     min-height: 100vh;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 .nav-links{
     flex-wrap: wrap;
     display: flex;
