@@ -89,7 +89,7 @@ body{
     display: flex;
     flex-direction: column;
     
-    padding-top: 10vh;
+    padding-top: 0vh;
     padding-left: 1vh;
     background-color: rgb(18, 18, 18);
 
