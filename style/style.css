@@ -169,7 +169,7 @@ body{
     animation-delay: 1s;
 }
 
-.fullstop-symbol{
+.color-effect{
     animation: tagcolor-fullstop 6s infinite ease-in-out;
     animation-delay: 1s;
 }
