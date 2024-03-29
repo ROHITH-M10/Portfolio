@@ -22,84 +22,37 @@ window.onload = windowSizeFn;
 window.addEventListener("resize", windowSizeFn);
 
 
-// journey
-document.querySelector(".journey").onmouseover = function() {
-    document.querySelector(".journey .x-h2").style.color = "white";
-    document.querySelector(".journey .x-p p").style.color = "white";
 
-    document.querySelector(".journey .x-h2").style.transition = "ease-in-out 1s";
-    document.querySelector(".journey .x-p p").style.transition = "ease-in-out 1s";
-
-
-}
-
-document.querySelector(".journey").onmouseout = function() {
-    document.querySelector(".journey .x-h2").style.color = "";
-    document.querySelector(".journey .x-p p").style.color = "";
-
-    document.querySelector(".journey .x-h2").style.transition = "ease-in-out 1s";
-    document.querySelector(".journey .x-p p").style.transition = "ease-in-out 1s";
-}
-
-// skills
-document.querySelector(".skills").onmouseover = function() {
-    document.querySelector(".skills .x-h2").style.color = "white";
-    document.querySelector(".skills .x-p p").style.color = "white";
-
-    document.querySelector(".skills .x-h2").style.transition = "ease-in-out 1s";
-    document.querySelector(".skills .x-p p").style.transition = "ease-in-out 1s";
-
-
-}
-
-document.querySelector(".skills").onmouseout = function() {
-    document.querySelector(".skills .x-h2").style.color = "";
-    document.querySelector(".skills .x-p p").style.color = "";
-
-    document.querySelector(".skills .x-h2").style.transition = "ease-in-out 1s";
-    document.querySelector(".skills .x-p p").style.transition = "ease-in-out 1s";
-}
-
-
-// interest
-document.querySelector(".interest").onmouseover = function() {
-    document.querySelector(".interest .x-h2").style.color = "white";
-    document.querySelector(".interest .x-p p").style.color = "white";
-
-    document.querySelector(".interest .x-h2").style.transition = "ease-in-out 1s";
-    document.querySelector(".interest .x-p p").style.transition = "ease-in-out 1s";
-
-
-}
-
-document.querySelector(".interest").onmouseout = function() {
-    document.querySelector(".interest .x-h2").style.color = "";
-    document.querySelector(".interest .x-p p").style.color = "";
-
-    document.querySelector(".interest .x-h2").style.transition = "ease-in-out 1s";
-    document.querySelector(".interest .x-p p").style.transition = "ease-in-out 1s";
-}
-
-
-// enjoy
-document.querySelector(".enjoy").onmouseover = function() {
-    document.querySelector(".enjoy .x-h2").style.color = "white";
-    document.querySelector(".enjoy .x-p p").style.color = "white";
-
-    document.querySelector(".enjoy .x-h2").style.transition = "ease-in-out 1s";
-    document.querySelector(".enjoy .x-p p").style.transition = "ease-in-out 1s";
-
-
-}
-
-document.querySelector(".enjoy").onmouseout = function() {
-    document.querySelector(".enjoy .x-h2").style.color = "";
-    document.querySelector(".enjoy .x-p p").style.color = "";
-
-    document.querySelector(".enjoy .x-h2").style.transition = "ease-in-out 1s";
-    document.querySelector(".enjoy .x-p p").style.transition = "ease-in-out 1s";
-}
-
+// Function to handle intersection
+function handleIntersection(entries, observer) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.querySelector('.x-h2').style.color = 'white';
+        entry.target.querySelector('.x-p p').style.color = 'white';
+        entry.target.querySelector('.x-h2').style.transition = 'color 1s ease-in-out';
+        entry.target.querySelector('.x-p p').style.transition = 'color 4s ease-in-out';
+      } else {
+        entry.target.querySelector('.x-h2').style.color = '';
+        entry.target.querySelector('.x-p p').style.color = '';
+      }
+    });
+  }
+  
+  // Options for the intersection observer
+  const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.5 // Change the threshold as needed
+  };
+  
+  // Create the intersection observer
+  const observer = new IntersectionObserver(handleIntersection, options);
+  
+  // Observe each section
+  document.querySelectorAll('.journey, .skills, .interest, .enjoy').forEach(section => {
+    observer.observe(section);
+  });
+  
 
 
 
