@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    font-family:monospace;
 }
 
 
@@ -128,8 +129,8 @@ body{
     align-items: center;
     transition: 0.5s ease-in-out;
     padding:0rem;
-    width: 70%;
-    gap: 1.5rem;
+    width: 80%;
+    gap: 4rem;
     flex-wrap: wrap;
 }
 
@@ -140,7 +141,7 @@ body{
     background-color: rgb(11, 11, 11);
     border: solid 2px aqua;
     max-width:240px;
-    height: 400px;
+    height: 450px;
     border-radius: 10%;
 }
 
@@ -157,18 +158,18 @@ body{
 }
 
 .project-info-block h2{
-    font-size: 1.2rem;
-    font-weight: 800;
+    font-size: 1.8rem;
+    font-weight: 600;
 }
 
 .project-info-block p{
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 400;
     padding: 10px 0px;
 }
 
 .project-info-block a{
-    font-size: 1rem;
+    font-size: 1.3rem;
     text-decoration: none;
     color: aqua;  
     padding-top: 6px;
@@ -179,13 +180,13 @@ body{
 
 .project:hover{
     background-color:rgb(24, 24, 24);
-    border-radius: 12%;
+    border-radius: 6%;
     transition: 0.5s ease-in-out;
 }
 
 .project-info-block a:hover{
     transition: 1s ease-in-out;
-    letter-spacing: 1px;
+    text-decoration: underline;
 }
 
 

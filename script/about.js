@@ -30,7 +30,7 @@ function handleIntersection(entries, observer) {
         entry.target.querySelector('.x-h2').style.color = 'white';
         entry.target.querySelector('.x-p p').style.color = 'white';
         entry.target.querySelector('.x-h2').style.transition = 'color 1s ease-in-out';
-        entry.target.querySelector('.x-p p').style.transition = 'color 4s ease-in-out';
+        entry.target.querySelector('.x-p p').style.transition = 'color 1s ease-in-out';
       } else {
         entry.target.querySelector('.x-h2').style.color = '';
         entry.target.querySelector('.x-p p').style.color = '';
