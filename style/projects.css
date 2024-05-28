@@ -2,18 +2,28 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-family:monospace;
-}
+    font-family: "Roboto Slab"}
 
 
 
 body{
     background-color:black;
     color: white;
-    font-family: sans-serif;
     user-select: none;
     min-height: 100vh;
+    animation: body 1s ease-in-out;
 }
+ 
+
+@keyframes body{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 
 ::-webkit-scrollbar{
     display: none;
@@ -34,12 +44,27 @@ body{
     background-color: rgb(35, 35, 35,1);
     color: white;
     transition: 0.5s ease-in-out;
-    position: fixed;
     margin-top: 1.4rem;
     border-radius: 20px;
     padding:0.6rem 0.8rem;
     gap: 4px;
     
+}
+
+/* animation for nav-link on loading */
+.nav-links{
+    animation: navlink 1s ease-in-out;
+}
+
+@keyframes navlink{
+    0%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
 
@@ -53,12 +78,12 @@ body{
 
 .nav-links{
     list-style: none;
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 
 .nav-links a{
     color: white;
-    padding: 8px 20px;
+    padding: 8px 16px;
 }
 
 .nav-links .not-active:not(.not-active-img):hover{
@@ -70,9 +95,8 @@ body{
 
 .nav-links .not-active{
     color: white;
-    font-size: 1.4rem;
-    font-weight: 600;
-    padding: 8px 20px;
+    font-size: 1rem;
+    padding: 8px 16px;
     border-radius: 20px;
     transition: 0.5s ease-in-out;
     background: linear-gradient(to right, aqua 49%, rgb(35, 35, 35) 50%);
@@ -104,11 +128,13 @@ body{
     background-color: aqua;
     padding: 6px 16px;
     border-radius: 20px;
+    font-size: 1rem;
 }
 
 
 
 /* small screen nav bar */
+
 
 .hidden {
     display: none;
@@ -117,10 +143,14 @@ body{
 .main-nav-small-visible{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
     background-color: rgb(18, 18, 18);
-    
     width: 100%;
+    justify-content: space-between;
+}
+
+.main-nav-small-visible .not-active img{
+    margin: 0px 10px;
 }
 
 .main-nav-small-inside{
@@ -130,19 +160,39 @@ body{
 .main-nav-small-inside-all{
     display: flex;
     flex-direction: column;
-    
-    padding-top: 0vh;
-    padding-left: 1vh;
+    height: 100vh;
+    gap: 4vh;
+    align-items: center;
     background-color: rgb(18, 18, 18);
 
 }
 
 .main-nav-small-inside a{
     color: white;
-    font-size: 5vw;
+    font-size: 2rem;
     border-bottom: solid 1px rgb(255, 255, 255);
-    padding-top: 1vh;
 }
+
+.main-nav-small-inside{
+    display: hidden;
+}
+
+.main-nav-small-inside-all{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    gap: 4vh;
+    align-items: center;
+    background-color: rgb(18, 18, 18);
+
+}
+
+.main-nav-small-inside a{
+    color: white;
+    font-size: 2rem;
+    border-bottom: solid 1px rgb(255, 255, 255);
+}
+
 
 /* main container */
 
@@ -191,18 +241,19 @@ body{
 }
 
 .project-info-block h2{
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     font-weight: 600;
+    text-decoration: underline;
 }
 
 .project-info-block p{
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 400;
     padding: 10px 0px;
 }
 
 .project-info-block a{
-    font-size: 1.3rem;
+    font-size: 1rem;
     text-decoration: none;
     color: aqua;  
     padding-top: 6px;

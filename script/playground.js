@@ -16,6 +16,10 @@ function dropDownMenu() {
     document.querySelector(".main-nav-small-inside").classList.toggle("hidden");
 }
 
+window.onload = windowSizeFn;
+window.addEventListener("resize", windowSizeFn);
+
+
 
 // function callOrange() {
 //     console.log("callorgane");
