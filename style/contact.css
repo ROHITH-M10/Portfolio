@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-family: "Roboto Slab"
+    font-family:sans-serif;
 }
 
 
@@ -14,6 +14,7 @@ body{
     min-height: 100vh;
     animation: body 1s ease-in-out;
 }
+ 
 
 @keyframes body{
     0%{
@@ -66,6 +67,8 @@ body{
         transform: translateY(0px);
     }
 }
+
+
 
 .not-active img{
     border-radius: 50%;
@@ -121,7 +124,6 @@ body{
 
 .nav-links .active{
     color: rgb(0, 0, 0);
-    font-weight: 600;
     transition: 0.4s ease-in-out;
     background-color: aqua;
     padding: 6px 16px;
@@ -130,7 +132,9 @@ body{
 }
 
 
+
 /* small screen nav bar */
+
 
 .hidden {
     display: none;
@@ -317,7 +321,7 @@ body{
 
 .footer-rights{
     padding: 2vh 0vh 0vh 0vh;
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 
 .footer-rights a{
@@ -327,7 +331,7 @@ body{
 
 .fa{
     margin: 2vh;
-    font-size: 1.4rem;
+    font-size: 1rem;
 
 }
 

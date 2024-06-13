@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-family: "Roboto Slab"}
+    font-family:sans-serif;
+}
 
 
 
@@ -123,7 +124,6 @@ body{
 
 .nav-links .active{
     color: rgb(0, 0, 0);
-    font-weight: 600;
     transition: 0.4s ease-in-out;
     background-color: aqua;
     padding: 6px 16px;
@@ -296,7 +296,7 @@ body{
 
 .footer-rights{
     padding: 2vh 0vh 0vh 0vh;
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 
 .footer-rights a{
@@ -306,7 +306,7 @@ body{
 
 .fa{
     margin: 2vh;
-    font-size: 1.4rem;
+    font-size: 1rem;
 
 }
 
