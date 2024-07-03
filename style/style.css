@@ -29,7 +29,7 @@ body{
 .main-nav{
     display: flex;
     justify-content: center;
-    height:8vh;
+    height: 8vh;
 }
 
 .nav-links{

@@ -68,7 +68,6 @@ body{
 }
 
 
-
 .not-active img{
     border-radius: 50%;
     border: solid 2px rgb(0, 0, 0);
@@ -200,9 +199,23 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-top: 10rem;
+    padding-top: 2rem;
     padding-bottom:5rem;
 }
+
+.project-title{
+    padding: 2rem 0rem;
+    margin-bottom: 2rem;
+}
+.project-title h1{
+    font-size: 3rem;
+    font-weight: 400;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: aqua;
+    text-decoration-thickness: 2px;
+}
+
 
 .project-container{
     display: flex;
@@ -224,7 +237,7 @@ body{
     border: solid 2px aqua;
     max-width:240px;
     height: 450px;
-    border-radius: 10%;
+    border-radius: 10px;
 }
 
 .img-block img{
@@ -262,9 +275,9 @@ body{
 }
 
 .project:hover{
-    background-color:rgb(24, 24, 24);
-    border-radius: 6%;
-    transition: 0s ease-in-out;
+    background-color:rgba(16, 16, 16, 0.89);
+    transition: 0.1s ease-in-out;
+    transform: scale(1.01);
 }
 
 .project-info-block a:hover{

@@ -195,14 +195,26 @@ body{
 
 
 /* main container */
-
 .main-container{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-top: 10rem;
+    padding-top: 2rem;
     padding-bottom:5rem;
+}
+
+.certificates-title{
+    padding: 2rem 0rem;
+    margin-bottom: 2rem;
+}
+.certificates-title h1{
+    font-size: 3rem;
+    font-weight: 400;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: aqua;
+    text-decoration-thickness: 2px;
 }
 
 .certificates-container{
@@ -264,9 +276,9 @@ body{
 }
 
 .certificates:hover{
-    background-color:rgb(24, 24, 24);
-    border-radius: 6%;
-    transition: 0s ease-in-out;
+    background-color:rgba(16, 16, 16, 0.89);
+    transition: 0.1s ease-in-out;
+    transform: scale(1.01);
 }
 
 .certificates-info-block a:hover{
