@@ -6,6 +6,7 @@
     <title>Contact</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../style/contact.css">
 </head>
@@ -50,12 +51,12 @@
             <form action="https://api.web3forms.com/submit" method="POST" class="form">
 
                 <input type="hidden" name="access_key" value="f9ae66a4-7cff-4fcb-bd8a-591587d9ac0d">
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
-                <input type="email" id="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" id="message" placeholder="Your Message" rows="10" required></textarea>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <textarea name="message" id="message" placeholder="Message" rows="10" required></textarea>
                 <div class="button-flex">
-                    <button type="submit" class="submit-button">Send</button>
-                    <button type="reset" class="reset-button">Reset</button>
+                    <button type="submit" class="submit-button"><i class="fa fa-send-o"></i></button>
+                    <button type="reset" class="reset-button"><i class="fa fa-refresh"></i></button>
                 </div>
             </form>
         </div>
