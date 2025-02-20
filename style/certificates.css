@@ -225,7 +225,7 @@ body{
     transition: 0.5s ease-in-out;
     padding:0rem;
     width: 80%;
-    gap: 3rem;
+    gap: 1rem;
     flex-wrap: wrap;
 }
 
@@ -233,8 +233,7 @@ body{
     display: inline-block;
     width:fit-content;
     padding: 2rem;
-    background-color: rgb(11, 11, 11);
-    border: solid 3px rgba(0, 255, 255, 0.443);
+    background-color: rgb(18, 18, 18);
     max-width:250px;
     height: 280px;
     border-radius: 2%;
@@ -324,4 +323,11 @@ body{
     transition: 0.5s ease-in-out;
     
 
+}
+
+
+@media screen and (max-width: 768px){
+    .certificates-container{
+        width: 100%;
+    }
 }
