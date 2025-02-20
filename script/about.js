@@ -18,7 +18,7 @@ function dropDownMenu() {
 
 
 
-window.onload = windowSizeFn;
+document.addEventListener("DOMContentLoaded", windowSizeFn);
 window.addEventListener("resize", windowSizeFn);
 
 
